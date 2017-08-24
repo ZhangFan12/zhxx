@@ -1,0 +1,56 @@
+/*#ScrollContent{
+  position: absolute;
+  @include position-all;
+  margin: 3em 0 4.25em 0;
+  overflow-x: hidden;
+}*/
+
+.head{
+  position: relative;
+  padding: $fs_xxs;
+  font-size: $fs_l;
+  text-align: center;
+  color: $c_themeFont2;
+  background-color: $c_theme;
+  &>.left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.5em 1em;
+  }
+  &>.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5em 1em;
+  }
+}
+/*.top-nav{
+  position: fixed;
+  bottom: 0;
+  @include position-left-right;
+  padding-left: $fs;
+  padding-right: $fs;
+  text-align: center;
+  background-color: $c_background2;
+  border-top: 1px solid $c_border;
+  border-bottom: .0625em solid $c_background2;
+  &>li{
+    display: inline-block;
+    padding-top: $fs_xxxs;
+    padding-bottom: $fs_xxxs;
+    width: 20%;
+    max-width: 9em;
+    min-width: 3em;
+    color: $c_themeFont;
+    &.active{
+      color: $c_theme;
+    }
+    &>span{
+      display: block;
+      font-family: $ff_theme;
+      font-size: $fs_s;
+    }
+  }
+}*/
+

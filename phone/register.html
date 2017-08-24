@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>123</title>
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-GridSystem.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+</head>
+
+<body style="background-color: #ffffff;">
+    <div class="login">
+        <div class="login-head">
+            <img src="img/bg.jpg" alt=""/>
+            <span class="vertical-align-middle"></span>
+        </div>
+        <div class="login-body">
+            <ul class="login-nav">
+                <li>注册</li>
+                <li class="active"></li>
+            </ul>
+            <div class="login-block">
+                <form id="login_form">
+                    <label class="login-input-group">
+                        <input type="text" data-bind="value:department,events:['keyup']" placeholder="请输入部门">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="text" data-bind="value:position,events:['keyup']" placeholder="请输入职位">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="text" data-bind="value:username,events:['keyup']" placeholder="请输入姓名">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="text" data-bind="value:phone,events:['keyup']" placeholder="请输入手机号码(11位)">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="password" data-bind="value:password,events:['keyup']" placeholder="请输入密码(6-16个字符)">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="password" data-bind="value:passwordAgain,events:['keyup']" placeholder="确认密码">
+                    </label>
+                    <div id="submit" class="form-btn btn-block">提交注册信息</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+<!--appcan.js-->
+<script src="js/appcan/appcan.js"></script>
+<script src="js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="./assets/mvvm/register.js"></script>
+
+</body>
+</html>

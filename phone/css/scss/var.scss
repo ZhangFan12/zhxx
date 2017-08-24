@@ -1,0 +1,57 @@
+//color
+$c_themeFont:#666666;
+$c_themeFont2:#ffffff;
+$c_theme:#c31406;
+$c_theme2:#f2ab25;
+$c_secondary:green;
+$c_background:#eeeeee;
+$c_background2:#ffffff;
+$c_border:#CCCCCC;
+
+//font size
+$fs_3l:3em;
+$fs_2l:2em;
+$fs_xxxl:1.875em;
+$fs_xxl:1.75em;
+$fs_xl:1.5em;
+$fs_l:1.25em;
+$fs:1em;
+$fs_s:.875em;
+$fs_xs:.75em;
+$fs_xxs:.5em;
+$fs_xxxs:.25em;
+
+//font family
+$ff_theme:"\5b8b\4f53";//ËÎÌו
+
+//mixin
+@mixin position-all{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@mixin position-left-right{
+  left: 0;
+  right: 0;
+}
+@mixin position-top-bottom{
+  top: 0;
+  bottom: 0;
+}
+@mixin wh-100{
+  width:100%;
+  height:100%;
+}
+@mixin border-radius {
+  border-radius: .5rem;
+}
+@mixin clear {
+  &:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}

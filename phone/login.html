@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>123</title>
+    <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-GridSystem.css"/>
+    <link rel="stylesheet" href="css/public.css"/>
+</head>
+
+<body style="background-color: #ffffff;">
+    <div class="login">
+        <div class="login-head">
+            <img src="img/bg.jpg" alt=""/>
+            <span class="vertical-align-middle"></span>
+        </div>
+        <div class="login-body">
+            <ul class="login-nav">
+                <li>登录</li>
+                <li>注册</li>
+                <li class="active"></li>
+            </ul>
+            <div class="login-block">
+                <form id="login_form">
+                    <label class="login-input-group">
+                        <input type="text" data-bind="value:username,events:['keyup']" placeholder="手机/用户名">
+                    </label>
+                    <label class="login-input-group">
+                        <input type="password" data-bind="value:password,events:['keyup']" placeholder="请输入密码(6-16个字符)">
+                    </label>
+                    <div class="login-input-group row">
+                        <label class="col-xs-6">
+                            <input type="checkbox" class="checkbox" /><i class="fa"></i>记住密码
+                        </label>
+                        <!--<div class="col-xs-6 text-right">忘记密码？</div>-->
+                        <div id="register" class="col-xs-6 text-right text-underline">注册</div>
+                    </div>
+                    <div id="submit" class="form-btn btn-block">登录</div>
+                    <!--<span data-bind="text:username,events:['keyup']" contenteditable="true"></span>-->
+                    <!--<span data-bind="text:password,events:['keyup']" contenteditable="true"></span>-->
+                </form>
+            </div>
+        </div>
+    </div>
+    
+<!--appcan.js-->
+<script src="js/appcan/appcan.js"></script>
+<script src="js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="./assets/mvvm/login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+.login{
+  position: absolute;
+  @include position-all;
+  width: 100%;
+  height: 100%;
+  font-size: $fs;
+  background-image: url('../img/login-bg.png');
+  background-position:center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  &>.login-head{
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    img{
+      box-sizing: content-box;
+      display: inline-block;
+      width: 25vw;
+      height: 25vw;
+      vertical-align:middle;
+      border-radius: 50%;
+      border: .5rem solid rgba(255,255,255,0.8);
+    }
+  }
+  &>.login-body{
+    width: 100%;
+    height: 65%;
+    border-top: .0625em solid #ffffff;
+    &>ul.login-nav{
+      position: relative;
+      width: 100%;
+      height: 3rem;
+      font-size: $fs_l;
+      &>li{
+        display: inline-block;
+        float: left;
+        width: 100%;
+        line-height: 3rem;
+        font-size: $fs;
+        color: #ffffff;
+        text-align: center;
+        &.active{
+          position: absolute;
+          left: calc(50% - .5em);
+          bottom: -.5em;
+          transform:rotate(45deg);
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          font-size: $fs_xxs;
+          background-color: #ffffff;
+        }
+      }
+    }
+    &>.login-block{
+      padding: 2em 10vw;
+      width: 100%;
+      //height: calc(100% - 3rem);
+      background-color: #ffffff;
+      .login-input-group{
+        display: block;
+        margin-bottom: 2em;
+        vertical-align: middle;
+        &>input{
+          outline:none;
+          width: 100%;
+          padding: 1em;
+          vertical-align: middle;
+          background-color: $c_border*1.2;
+          border: 0;
+          @include border-radius;
+        }
+      }
+    }
+  }
+}

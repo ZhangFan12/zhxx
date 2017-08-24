@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>我的需求</title>
+    <link rel="stylesheet" href="../css/fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap-GridSystem.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+
+<body id="opinion">
+
+<!--head-->
+<header id="head" class="head">
+    <span class="left back-btn" data-bind="toggle:head_left_icon"><i class="iconfont icon-arrowleft"></i></span>
+    <span id="head_title" data-bind="text:head_title"></span>
+    <span class="right" data-bind="toggle:head_right_icon"><i class="fa fa-ellipsis-h"></i></span>
+</header>
+
+<!--block-->
+<div class="block mar-t-10">
+    <textarea class="block-body" placeholder="请写出对我们的宝贵意见，以便我们能够更好的为您服务！" data-bind="text:textarea" style="height: 20em;"></textarea>
+</div>
+<!--button-->
+<div id="submit" class="btn btn-block" style="margin-top: 5rem;">提交信息</div>
+
+<!--appcan.js-->
+<script src="../js/appcan/appcan.js"></script>
+<script src="../js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="../assets/mvvm/user/opinion.js"></script>
+<!--<script src="../js/rollCall.js"></script>-->
+
+<script src="../js/public.js"></script>
+
+</body>
+</html>

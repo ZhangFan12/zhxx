@@ -1,0 +1,73 @@
+.tabview{
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  background-color: $c_background2;
+  border-top: .0625rem solid $c_border;
+  &>ul{
+    position: relative;
+    display: -webkit-box;
+    display: box;
+    width: 100%;
+    font-size: 1em;
+    &>li{
+      position: relative;
+      display: -webkit-box;
+      display: box;
+      -webkit-box-flex: 1;
+      box-flex: 1;
+      font-size: 0.75em;
+      &>div:first-child{
+         position: relative;
+         display: -webkit-box;
+         display: box;
+         -webkit-box-flex: 1;
+         box-flex: 1;
+         -webkit-box-orient: vertical;
+         box-orient: vertical;
+         -webkit-box-align: center;
+         box-align: center;
+         &.active{
+           color: $c_theme;
+         }
+         &>span{
+           display: -webkit-box;
+           display: box;
+         }
+       }
+      .tab_badge {
+        position: absolute;
+        width: 1em;
+        height: 1em;
+        right: 1em;
+        top: 0.3em;
+        color: #ffffff;
+        text-align: center;
+        background-color: $c_theme;
+        -webkit-border-radius: 1.2em;
+        border-radius: 1.2em;
+      }
+      .iconfont{
+        font-size: 2em;
+      }
+    }
+  }
+}
+.tab_m{
+  height: $fs_3l;
+  .item{
+    padding-top: 0.4em;
+  }
+}
+.tab_l{
+  height: $fs_2l;
+  .item{
+    padding: 0.7em 0
+  }
+}
+.tab_i{
+  height: 2.3em;
+  .item{
+    padding: 0.4em 0
+  }
+}

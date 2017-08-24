@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>工作</title>
+    <link rel="stylesheet" href="css/fonts/iconfont.css">
+    <link rel="stylesheet" href="css/public.css"/>
+</head>
+
+<body id="work">
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-body">
+        <ul class="list-block" data-bind="for:block1_Data" mvvm-scope>
+            <li class="openWin" data-bind="attr:{pageURL:pageURL}"><i data-bind="attr:{class:icon}"></i><span data-bind="text:name"></span></li>
+        </ul>
+    </div>
+</div>
+
+<!--appcan.js-->
+<script src="js/appcan/appcan.js"></script>
+<script src="js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="./assets/mvvm/work.js"></script>
+<script src="js/work.js"></script>
+
+<script src="js/public.js"></script>
+
+</body>
+</html>

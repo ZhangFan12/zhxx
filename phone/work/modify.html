@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>工作</title>
+    <link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-GridSystem.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+
+<body id="rollCall">
+
+<!--head-->
+<header id="head" class="head">
+    <span class="left back-btn" data-bind="toggle:head_left_icon"><i class="iconfont icon-arrowleft"></i></span>
+    <span id="head_title" data-bind="text:head_title"></span>
+    <span class="right" data-bind="toggle:head_right_icon"><i class="fa fa-ellipsis-h"></i></span>
+</header>
+
+<!--block-->
+<div class="block mar-t-10">
+    <table class="input-table">
+        <tbody data-bind="for:block1_Data" mvvm-scope>
+            <tr>
+                <td data-bind="text:name">部门</td>
+                <td>
+                    <input type="text" data-bind="value:val" title=""/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--button-->
+<div id="submit" class="btn btn-block" style="margin-top: 5rem;">提交信息审核</div>
+
+<!--appcan.js-->
+<script src="../js/appcan/appcan.js"></script>
+<script src="../js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="../assets/mvvm/work/modify.js"></script>
+<!--<script src="../js/rollCall.js"></script>-->
+
+<script src="../js/public.js"></script>
+
+</body>
+</html>

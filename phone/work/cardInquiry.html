@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>工作</title>
+    <link rel="stylesheet" href="../css/fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+
+<body id="teachingMaterial">
+
+<!--head-->
+<header id="head" class="head">
+    <span class="left back-btn" data-bind="toggle:head_left_icon"><i class="iconfont icon-arrowleft"></i></span>
+    <span id="head_title" data-bind="text:head_title"></span>
+    <span class="right" data-bind="toggle:head_right_icon"><i class="fa fa-ellipsis-h"></i></span>
+</header>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-body">
+        <ul class="list-block" data-bind="for:block1_Data" mvvm-scope>
+            <li class="openWin" data-bind="attr:{pageURL:pageURL}"><i data-bind="attr:{class:icon}"></i><span data-bind="text:name">XXX</span></li>
+        </ul>
+    </div>
+</div>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-head">
+        <span class="block-title" data-bind="text:block2_name"></span>
+        <span class="block-title-right" data-bind="attr:{pageURL:block2_URL}">查看全部</span>
+    </div>
+    <div class="block-body pad-0">
+        <ul class="list-line" data-bind="for:block2_Data" mvvm-scope>
+            <li>
+                <div class="left width-6" data-bind="text:title"></div>
+                <div class="right">
+                    <span class="fs-s text-gray" data-bind="text:time"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-head">
+        <span class="block-title" data-bind="text:block3_name"></span>
+        <span class="block-title-right" data-bind="attr:{pageURL:block3_URL}">查看全部</span>
+    </div>
+    <div class="block-body pad-0">
+        <ul class="list-line" data-bind="for:block3_Data" mvvm-scope>
+            <li>
+                <div class="left width-6" data-bind="text:title"></div>
+                <div class="right">
+                    <span class="fs-s text-gray" data-bind="text:time"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--block-->
+<div class="block mar-t-10 mar-b-10">
+    <div class="block-head">
+        <span class="block-title" data-bind="text:block4_name"></span>
+        <span class="block-title-right" data-bind="attr:{pageURL:block4_URL}">查看全部</span>
+    </div>
+    <div class="block-body pad-0">
+        <ul class="list-line" data-bind="for:block4_Data" mvvm-scope>
+            <li>
+                <div class="left width-6" data-bind="text:title"></div>
+                <div class="right">
+                    <span class="fs-s text-gray" data-bind="text:time"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--appcan.js-->
+<script src="../js/appcan/appcan.js"></script>
+<script src="../js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="../assets/mvvm/work/cardInquiry.js"></script>
+<!--<script src="../js/rollCall.js"></script>-->
+
+<script src="../js/public.js"></script>
+
+</body>
+</html>

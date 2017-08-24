@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
+    <title>工作</title>
+    <link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap-GridSystem.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+</head>
+
+<body id="rollCall">
+
+<!--head-->
+<header id="head" class="head">
+    <span class="left back-btn" data-bind="toggle:head_left_icon"><i class="iconfont icon-arrowleft"></i></span>
+    <span id="head_title" data-bind="text:head_title"></span>
+    <span class="right" data-bind="toggle:head_right_icon"><i class="fa fa-ellipsis-h"></i></span>
+</header>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-head">
+        <span class="block-title" data-bind="text:block1_name"></span>
+        <!--<span class="block-title-right">查看更多公告</span>-->
+    </div>
+    <div class="block-body">
+        <ul class="list-block" data-bind="for:block1_Data" mvvm-scope>
+            <li class="openWin" data-bind="attr:{pageURL:pageURL}"><i data-bind="attr:{class:icon}"></i><span data-bind="text:name">XXX</span></li>
+        </ul>
+    </div>
+</div>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-body pad-0">
+        <ul class="list-line" data-bind="for:block2_Data">
+            <li mvvm-scope>
+                <div class="left" data-bind="text:name"></div>
+                <div class="right">
+                    <!--<span class="text-theme" data-bind="toggle:illness">病假</span>-->
+                    <!--<span class="text-theme" data-bind="toggle:matter">事假</span>-->
+                    <span class="text-theme" data-bind="toggle:matter">请假</span>
+                    <label data-bind="toggle:not(matter)">
+                        <input type="checkbox" class="checkbox" data-bind="checked:type" /><i class="fa"></i>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--block-->
+<div class="block mar-t-10">
+    <div class="block-head">
+        <span class="block-title" data-bind="text:block3_name"></span>
+    </div>
+    <div class="block-body row roll-call-total">
+        <div class="col-xs-6">
+            <p class="lh-2">已到：<span id="block3_data1" class="fs-l text-theme">0</span>人</p>
+        </div>
+        <div class="col-xs-6">
+            <p class="lh-2">未到：<span id="block3_data2" class="fs-l text-theme">0</span>人</p>
+        </div>
+        <!--<div class="col-xs-6">
+            <p class="lh-2">病假：<span class="fs-l text-theme">0</span>人</p>
+        </div>
+        <div class="col-xs-6">
+            <p class="lh-2">事假：<span class="fs-l text-theme">0</span>人</p>
+        </div>-->
+        <div class="col-xs-12">
+            <p class="lh-2">请假：<span id="block3_data3" class="fs-l text-theme" data-bind="html:matter">0</span>人</p>
+        </div>
+    </div>
+</div>
+
+<!--button-->
+<div id="submit" class="btn btn-block mar-t-10 mar-b-10">提交</div>
+
+<!--appcan.js-->
+<script src="../js/appcan/appcan.js"></script>
+<script src="../js/appcan/appcan.control.js"></script>
+
+<!--self js-->
+<script src="../assets/mvvm/work/rollCall.js"></script>
+<!--<script src="../js/rollCall.js"></script>-->
+
+<script src="../js/public.js"></script>
+
+</body>
+</html>
